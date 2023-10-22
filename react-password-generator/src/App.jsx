@@ -44,12 +44,12 @@ function App() {
           <input type='range' min={6} max={100} value={length} onChange={(e) => { setLength(e.target.value) }} className='cursor-pointer'/>
           <label className='text-md text-orange-500 font-semibold'>Length: {length}</label>
           </div>
-          <div className='flex items-center gap-x-1 m-5 p-4'>
-            <input type='checkbox' defaultChecked={numberAllowed} id="numberinput" onChange={() => {setNumbers((prev) => !(prev)) }}/>
+          <div className='flex items-center gap-x-2 m-5 p-4'>
+            <input type='checkbox' defaultChecked={numberAllowed} id="numberinput" onChange={() => {setNumbers((prev) => !(prev)) }} className='form-checkbox rounded text-blue-400 cursor-pointer'/>
             <label className='text-md text-orange-500 font-semibold'>Numbers</label>
           </div>
-          <div className='flex items-center gap-x-1'>
-            <input type='checkbox' defaultChecked={characterAllowed} id="charinput" onChange={() => { setCharacters((prev) => !(prev)) }}/>
+          <div className='flex items-center gap-x-2'>
+            <input type='checkbox' defaultChecked={characterAllowed} id="charinput" onChange={() => { setCharacters((prev) => !(prev)) }} className='form-checkbox rounded text-blue-400 cursor-pointer'/>
             <label className='text-md text-orange-500 font-semibold'>Characters</label>
           </div>
           </div>
